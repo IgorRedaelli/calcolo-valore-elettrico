@@ -1,0 +1,150 @@
+    <script type="text/javascript" language="javascript">
+<!--//--><![CDATA[// ><!--
+
+function calcs()
+  {
+  c1s  = eval(document.tabsp.c1s.value);
+  c2s  = eval(document.tabsp.c2s.value);
+  document.tabsp.cts.value = Math.round((1/((1/c1s)+(1/c2s)))*1000)/1000;
+    }
+
+function calcp()
+  {
+  c1p  = eval(document.tabsp.c1p.value);
+  c2p  = eval(document.tabsp.c2p.value);
+  document.tabsp.ctp.value = Math.round((c1p+c2p)*1000)/1000;
+    }
+function calls()
+  {
+  l1s  = eval(document.tabsp.l1s.value);
+  l2s  = eval(document.tabsp.l2s.value);
+  document.tabsp.lts.value = Math.round((l1s+l2s)*1000)/1000;
+    }
+
+function callp()
+  {
+  l1p  = eval(document.tabsp.l1p.value);
+  l2p  = eval(document.tabsp.l2p.value);
+
+  document.tabsp.ltp.value = Math.round((1/((1/l1p)+(1/l2p)))*1000)/1000;
+    }
+
+function calrs()
+  {
+  r1s  = eval(document.tabsp.r1s.value);
+  r2s  = eval(document.tabsp.r2s.value);
+  document.tabsp.rts.value = Math.round((r1s+r2s)*1000)/1000;
+    }
+
+function calrp()
+  {
+  r1p  = eval(document.tabsp.r1p.value);
+  r2p  = eval(document.tabsp.r2p.value);
+  document.tabsp.rtp.value = Math.round((1/((1/r1p)+(1/r2p)))*1000)/1000;
+    }
+
+function calzs()
+  {
+  z1s  = eval(document.tabsp.z1s.value);
+  z2s  = eval(document.tabsp.z2s.value);
+  document.tabsp.zts.value = Math.round((z1s+z2s)*1000)/1000;
+    }
+
+function calzp()
+  {
+  z1p  = eval(document.tabsp.z1p.value);
+  z2p  = eval(document.tabsp.z2p.value);
+  document.tabsp.ztp.value = Math.round((1/((1/z1p)+(1/z2p)))*1000)/1000;
+    }
+
+//--><!]]>
+</script>
+
+									<p>
+
+With this new and simple tools, you can calculate the final value of capacitors, inductors, resistors and speakers placed in series or in parallel.
+
+Once the data is entered click on the button "Calculate".
+
+Remember to write <em>1.0</em> and not <em>1.0</em>.<br><br>
+
+									    <form name="tabsp" id="tabsp">
+<table><tr><td>
+	Condensatori in serie</td>
+<td>
+	C1 <input size="5" name="c1s" /><br />
+	C2 <input size="5" name="c2s" /></td>
+<td>
+	<b> C<sub>tot</sub> = </b><input size="7" name="cts" /></td>
+<td>
+	<input onclick="calcs()" type="button" value="Calcola" /></td>
+</tr><tr><td><br /><br />
+	Condensatori in parallelo</td>
+<td><br /><br />
+	C1 <input size="5" name="c1p" /><br />
+	C2 <input size="5" name="c2p" /></td>
+<td><br /><br />
+	<b> C<sub>tot</sub> = </b><input size="7" name="ctp" /></td><td><br /><br />
+	<input onclick="calcp()" type="button" value="Calcola" /></td>
+</tr><tr><td colspan="4"></td>
+</tr><tr><td><br /><br />
+	Induttori in serie</td>
+<td><br /><br />
+	L1 <input size="5" name="l1s" /><br />
+	L2 <input size="5" name="l2s" /></td>
+<td><br /><br />
+	<b> L<sub>tot</sub> = </b><input size="7" name="lts" /></td>
+<td><br /><br />
+	<input onclick="calls()" type="button" value="Calcola" /></td>
+</tr><tr><td><br /><br />
+	Induttori in parallelo</td>
+<td><br /><br />
+	L1 <input size="5" name="l1p" /><br />
+	L2 <input size="5" name="l2p" /></td>
+<td><br /><br />
+	<b> L<sub>tot</sub> = </b><input size="7" name="ltp" /></td>
+<td><br /><br />
+	<input onclick="callp()" type="button" value="Calcola" /></td>
+</tr><tr><td colspan="4"></td>
+</tr><tr><td><br /><br />
+	Resistori in serie</td>
+<td><br /><br />
+	R1 <input size="5" name="r1s" /><br />
+	R2 <input size="5" name="r2s" /></td>
+<td><br /><br />
+	<b> R<sub>tot</sub> = </b><input size="7" name="rts" /></td>
+<td><br /><br />
+	<input onclick="calrs()" type="button" value="Calcola" /></td>
+</tr><tr><td><br /><br />
+	Resistori in parallelo</td>
+<td><br /><br />
+    R1 <input size="5" name="r1p" /><br />
+	R2 <input size="5" name="r2p" /></td>
+<td><br /><br />
+	<b> R<sub>tot</sub> = </b><input size="7" name="rtp" /></td>
+<td><br /><br />
+	<input onclick="calrp()" type="button" value="Calcola" /></td>
+</tr><tr><td colspan="4"></td>
+</tr><tr><td><br /><br />
+	Altoparlanti in serie</td>
+<td><br /><br />
+	Z1 <input size="5" name="z1s" /><br />
+	Z2 <input size="5" name="z2s" /></td>
+<td><br /><br />
+	<b> Z<sub>tot</sub> = </b><input size="7" name="zts" /></td>
+<td><br /><br />
+	<input onclick="calzs()" type="button" value="Calcola" /></td>
+</tr><tr><td><br /><br />
+	Altoparlanti in parallelo</td>
+<td><br /><br />
+	Z1 <input size="5" name="z1p" /><br />
+	Z2 <input size="5" name="z2p" /></td>
+<td><br /><br />
+	<b> Z<sub>tot</sub> = </b><input size="7" name="ztp" /></td>
+<td><br /><br />
+	<input onclick="calzp()" type="button" value="Calcola" /></td>
+</tr><td colspan="4" align="center"><br /><br /><input type="reset" value="Cancella tutto" /></td>
+</table></form>
+
+<br /><br />
+<a href="http://igorredaelli.com">Powered By: Igor Redaelli</a>
